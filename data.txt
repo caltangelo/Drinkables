@@ -1,0 +1,4 @@
+Adios Motherfucker:Long:highball:"Pour 1/2 oz of all ingredients except the 7-Up (2 oz sweet and sour) into a chilled glass filled with ice cubes. Top with 7-Up and stir gently.":
+vodka:rum:tequila:gin:Blue Curacao:Sweet and Sour mix:7-up
+Amaretto Sour:short:old-fashioned:"Pour the amaretto liqueur into a cocktail shaker half-filled with ice cubes. Add a splash or two of sweet and sour mix, and shake well. Strain or pour into an old-fashioned glass, garnish with a maraschino cherry and a slice of orange, and serve.":amaretto:sweet and sour mix
+Bloody Mary:short:highball:"Add Smirnoff No.21 Vodka, tomato juice, red hot sauce, green hot sauce, worchester sauce, lemon juice, pinch of salt, pinch of pepper.Pour back and forth between two mixing glasses. Strain into an ice-filled highball glass. Garnish with celery stalk":vodka:tomato juice:red hot sauce:green hot sauce:worcestershire sauce:lemon juice:salt:peppers:celery

@@ -1,0 +1,18 @@
+Python data entry:
+input recipe as name:category:glass:recipe:base:otheringredients
+
+adds name:glass:recipe:instructions:base to Drinks table
+
+adds all unseen ingredients to Ingredients table
+
+for all ingredients in drink:
+	add drink_id, ingredient_id to Recipes table
+
+
+EDIT:
+empty list of ingredients
+at each line:
+add to DB new drink with name, category, glass, recipe, base
+
+add any new ingredients to list
+
