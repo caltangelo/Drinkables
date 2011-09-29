@@ -1,0 +1,106 @@
+| 7-up                             | 
+| Amaretto                         | 
+| Banana                           | 
+| Benedictine                      | 
+| Bitters, Angostura               | 
+| Brandy, blackberry               | 
+| Brandy, cherry                   | 
+| Butter                           | 
+| Carbonated Water/Club Soda       | 
+| Celery                           | 
+| Champagne                        | 
+| Cherries/Maraschinos             | 
+| Clamato Juice                    | 
+| Cloves                           | 
+| Coconut Milk                     | 
+| Cognac                           | 
+| Cognac ( Hennessy )              | 
+| Cola                             | 
+| Cranberry Juice                  | 
+| Cream                            | 
+| Cream of coconut                 | 
+| Creme de Cacao, dark             | 
+| Creme de Cacao, white            | 
+| Creme de Menthe, green           | 
+| Curacao, blue                    | 
+| Curacao, orange                  | 
+| Gin                              | 
+| Gin ( Bombay Sapphire )          | 
+| Gin (Boodles)                    | 
+| Ginger Ale                       | 
+| Grand Marnier                    | 
+| Grapefruit Juice                 | 
+| Grenadine                        | 
+| Horseradish                      | 
+| Hpnotiq                          | 
+| Ice                              | 
+| Iced Tea                         | 
+| J?germeister                     | 
+| Jack Daniel's                    | 
+| Kahlua                           | 
+| Lemon                            | 
+| Lemon Juice                      | 
+| Lemonade                         | 
+| Lime                             | 
+| Lime Cordial (Rose's)            | 
+| Lime Juice                       | 
+| Liqueur, banana                  | 
+| Liqueur, coffee                  | 
+| Liqueur, melon                   | 
+| Liqueur, melon ( Midori )        | 
+| Liqueur, orange                  | 
+| Liqueur, pineapple               | 
+| Liqueur, raspberry               | 
+| Milk                             | 
+| Mint                             | 
+| Nutmeg                           | 
+| Olive                            | 
+| Orange Juice                     | 
+| Oranges                          | 
+| Orgeat Syrup                     | 
+| Pepper, white                    | 
+| Pi?a Colada Mix                  | 
+| Pickle Juice                     | 
+| Pineapple                        | 
+| Pineapple Juice                  | 
+| Rum, coconut                     | 
+| Rum, coconut ( Malibu )          | 
+| Rum, dark                        | 
+| Rum, gold                        | 
+| Rum, light                       | 
+| Rum, overproof/151 proof         | 
+| Rum, pineapple                   | 
+| Rum, white                       | 
+| Salt                             | 
+| Schnapps, peach                  | 
+| Schnapps, peach (DeKuyper Peacht | 
+| Schnapps, strawberry             | 
+| Sour Apple Pucker                | 
+| Sour Mix                         | 
+| Southern Comfort                 | 
+| Sprite                           | 
+| Steak Sauce                      | 
+| Strawberries                     | 
+| Sugar                            | 
+| Sugar Syrup                      | 
+| Sugar, brown                     | 
+| Sugar, powdered                  | 
+| Syrup, Gomme                     | 
+| Syrup, passion fruit             | 
+| Tabasco Sauce                    | 
+| Tequila, gold                    | 
+| Tequila, white                   | 
+| Tequila, white (Jose Cuervo Clas | 
+| Tomato Juice                     | 
+| Tonic Water                      | 
+| Triple Sec                       | 
+| Triple Sec ( Cointreau )         | 
+| Tuaca                            | 
+| Vermouth, dry                    | 
+| Vodka                            | 
+| Vodka (Stolichnaya)              | 
+| Water                            | 
+| Whipped cream                    | 
+| Whiskey, Canadian ( Crown Royal  | 
+| Worcestershire Sauce             | 
+| Yukon Jack                       | 

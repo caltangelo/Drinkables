@@ -1,0 +1,39 @@
+<item> Amaretto </item>
+<item> Benedictine </item>
+<item> Brandy, blackberry </item>
+<item> Champagne </item>
+<item> Cognac </item>
+<item> Cognac ( Hennessy ) </item>
+<item> Creme de Cacao, dark </item>
+<item> Creme de Cacao, white </item>
+<item> Curacao, blue </item>
+<item> Curacao, orange </item>
+<item> Gin </item>
+<item> Gin ( Bombay Sapphire ) </item>
+<item> Gin (Boodles) </item>
+<item> Grand Marnier </item>
+<item> J?germeister </item>
+<item> Jack Daniel's </item>
+<item> Kahlua </item>
+<item> Lime Cordial (Rose's) </item>
+<item> Liqueur, banana </item>
+<item> Liqueur, coffee </item>
+<item> Liqueur, melon </item>
+<item> Liqueur, melon ( Midori ) </item>
+<item> Liqueur, orange </item>
+<item> Rum, coconut </item>
+<item> Rum, coconut ( Malibu ) </item>
+<item> Rum, dark </item>
+<item> Rum, light </item>
+<item> Rum, overproof/151 proof </item>
+<item> Rum, pineapple </item>
+<item> Rum, white </item>
+<item> Schnapps, peach </item>
+<item> Schnapps, peach (DeKuyper Peacht </item>
+<item> Southern Comfort </item>
+<item> Tequila, gold </item>
+<item> Tequila, white </item>
+<item> Triple Sec ( Cointreau ) </item>
+<item> Vodka </item>
+<item> Whiskey, Canadian ( Crown Royal </item>
+<item> Yukon Jack </item>

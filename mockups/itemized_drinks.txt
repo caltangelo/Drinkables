@@ -1,0 +1,100 @@
+<item> '57 Chevy </item>
+<item> 007 Martini </item>
+<item> A Day At The Beach </item>
+<item> A Southern Screw </item>
+<item> Alice In Wonderland </item>
+<item> Amaretto Rose </item>
+<item> Amaretto Sour </item>
+<item> Amaretto Spritzer </item>
+<item> Amaretto Sunrise </item>
+<item> Bahama Mama </item>
+<item> Beautiful </item>
+<item> Black Russian </item>
+<item> Blonde Bimbo </item>
+<item> Bloody Mary </item>
+<item> Blue Hawaiian </item>
+<item> Blue Margarita </item>
+<item> Buffalo Milk </item>
+<item> Cadillac Margarita </item>
+<item> Caesar </item>
+<item> Caucasian </item>
+<item> Charm City Classic </item>
+<item> Chi-Chi </item>
+<item> Daiquiri </item>
+<item> Death Of A Virgin </item>
+<item> Diamond Margarita </item>
+<item> Dirty Bizzo </item>
+<item> Electric Smurf </item>
+<item> Elysium </item>
+<item> Emerald Breeze </item>
+<item> Frozen Margarita </item>
+<item> Fuzzy Shark </item>
+<item> Gin And Juice </item>
+<item> Gin and Tonic </item>
+<item> Gin Breeze </item>
+<item> Gladiator </item>
+<item> Goombay Smach </item>
+<item> Grasshopper </item>
+<item> Hawaiian King </item>
+<item> Hot Buttered Rum </item>
+<item> Incredible Hulk </item>
+<item> Island Breeze </item>
+<item> Jager Monster </item>
+<item> Kamikaze </item>
+<item> Liquid Cocaine #2 </item>
+<item> Long Island Iced Tea </item>
+<item> Lynchburg Lemonade </item>
+<item> Lyndon State Rugger </item>
+<item> Mai Tai </item>
+<item> Malibu Mojito </item>
+<item> Margarita </item>
+<item> Margarita (1948 Original) </item>
+<item> Martini (dry) </item>
+<item> Martini (Extra Dry) </item>
+<item> Mike's Bloody Mary </item>
+<item> Mimosa </item>
+<item> Missouri Rattlesnake </item>
+<item> Mojito </item>
+<item> New Orleans Hurricane </item>
+<item> Panty Hamster </item>
+<item> Peachy Screw Gin Fizz </item>
+<item> Peachy Sunrise </item>
+<item> Pina Colada </item>
+<item> Purple Rain </item>
+<item> Release Valve </item>
+<item> Santorum </item>
+<item> Screaming Sex With The Bartender </item>
+<item> Screw Gin </item>
+<item> Screw Gin Fizz </item>
+<item> Serendipity </item>
+<item> Sex On The Bar </item>
+<item> Sex On The Beach </item>
+<item> Sex On The Beach #2 </item>
+<item> Sex On The Beach #3 </item>
+<item> Sex With Jennifer </item>
+<item> Sex With Jenny </item>
+<item> Sex With The Bartender </item>
+<item> Simple Cocaine </item>
+<item> Singapore Sling </item>
+<item> SoCo & Lime </item>
+<item> Southern Love </item>
+<item> Southern Sex </item>
+<item> Southern Sunshine </item>
+<item> Spider Man </item>
+<item> Strawberry Daiquiri </item>
+<item> Superman </item>
+<item> Tequila Shots </item>
+<item> Tequila Sunrise </item>
+<item> The Berserker </item>
+<item> The Dude's White Russian </item>
+<item> The Friend John </item>
+<item> The Ol' Midori Sour </item>
+<item> Tokyo Tea #2 </item>
+<item> Tom Collins </item>
+<item> Tropical Hooter </item>
+<item> Vodka Gimlet </item>
+<item> Watercolour </item>
+<item> White Russian </item>
+<item> Wild Sex </item>
+<item> Wild Wet Dream </item>
+<item> Yukon </item>

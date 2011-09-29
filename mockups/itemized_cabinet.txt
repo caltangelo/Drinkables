@@ -1,0 +1,106 @@
+<item> 7-up </item>
+<item> Amaretto </item>
+<item> Banana </item>
+<item> Benedictine </item>
+<item> Bitters, Angostura </item>
+<item> Brandy, blackberry </item>
+<item> Brandy, cherry </item>
+<item> Butter </item>
+<item> Carbonated Water/Club Soda </item>
+<item> Celery </item>
+<item> Champagne </item>
+<item> Cherries/Maraschinos </item>
+<item> Clamato Juice </item>
+<item> Cloves </item>
+<item> Coconut Milk </item>
+<item> Cognac </item>
+<item> Cognac ( Hennessy ) </item>
+<item> Cola </item>
+<item> Cranberry Juice </item>
+<item> Cream </item>
+<item> Cream of coconut </item>
+<item> Creme de Cacao, dark </item>
+<item> Creme de Cacao, white </item>
+<item> Creme de Menthe, green </item>
+<item> Curacao, blue </item>
+<item> Curacao, orange </item>
+<item> Gin </item>
+<item> Gin ( Bombay Sapphire ) </item>
+<item> Gin (Boodles) </item>
+<item> Ginger Ale </item>
+<item> Grand Marnier </item>
+<item> Grapefruit Juice </item>
+<item> Grenadine </item>
+<item> Horseradish </item>
+<item> Hpnotiq </item>
+<item> Ice </item>
+<item> Iced Tea </item>
+<item> J?germeister </item>
+<item> Jack Daniel's </item>
+<item> Kahlua </item>
+<item> Lemon </item>
+<item> Lemon Juice </item>
+<item> Lemonade </item>
+<item> Lime </item>
+<item> Lime Cordial (Rose's) </item>
+<item> Lime Juice </item>
+<item> Liqueur, banana </item>
+<item> Liqueur, coffee </item>
+<item> Liqueur, melon </item>
+<item> Liqueur, melon ( Midori ) </item>
+<item> Liqueur, orange </item>
+<item> Liqueur, pineapple </item>
+<item> Liqueur, raspberry </item>
+<item> Milk </item>
+<item> Mint </item>
+<item> Nutmeg </item>
+<item> Olive </item>
+<item> Orange Juice </item>
+<item> Oranges </item>
+<item> Orgeat Syrup </item>
+<item> Pepper, white </item>
+<item> Pi?a Colada Mix </item>
+<item> Pickle Juice </item>
+<item> Pineapple </item>
+<item> Pineapple Juice </item>
+<item> Rum, coconut </item>
+<item> Rum, coconut ( Malibu ) </item>
+<item> Rum, dark </item>
+<item> Rum, gold </item>
+<item> Rum, light </item>
+<item> Rum, overproof/151 proof </item>
+<item> Rum, pineapple </item>
+<item> Rum, white </item>
+<item> Salt </item>
+<item> Schnapps, peach </item>
+<item> Schnapps, peach (DeKuyper Peacht </item>
+<item> Schnapps, strawberry </item>
+<item> Sour Apple Pucker </item>
+<item> Sour Mix </item>
+<item> Southern Comfort </item>
+<item> Sprite </item>
+<item> Steak Sauce </item>
+<item> Strawberries </item>
+<item> Sugar </item>
+<item> Sugar Syrup </item>
+<item> Sugar, brown </item>
+<item> Sugar, powdered </item>
+<item> Syrup, Gomme </item>
+<item> Syrup, passion fruit </item>
+<item> Tabasco Sauce </item>
+<item> Tequila, gold </item>
+<item> Tequila, white </item>
+<item> Tequila, white (Jose Cuervo Clas </item>
+<item> Tomato Juice </item>
+<item> Tonic Water </item>
+<item> Triple Sec </item>
+<item> Triple Sec ( Cointreau ) </item>
+<item> Tuaca </item>
+<item> Vermouth, dry </item>
+<item> Vodka </item>
+<item> Vodka (Stolichnaya) </item>
+<item> Water </item>
+<item> Whipped cream </item>
+<item> Whiskey, Canadian ( Crown Royal </item>
+<item> Worcestershire Sauce </item>
+<item> Yukon Jack </item>
