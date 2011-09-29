@@ -1,0 +1,20 @@
+	package com.android.demo.notepad2;
+
+import android.R;
+import android.app.Activity;
+import android.os.Bundle;
+
+public class NoteEdit extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.note_edit);
+		setTitle(R.string.edit_note);
+		mTitleText = (EditText) findViewById(R.id.title);
+		mBodyText = (EditText) findViewById(R.id.body);
+		Button confirmButton = (Button) findViewById(R.id.confirm);
+	}
+
+}

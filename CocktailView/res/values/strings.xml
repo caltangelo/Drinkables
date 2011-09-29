@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CocktailViewActivity!</string>
+    <string name="app_name">CocktailView</string>
+    <string name="drink_name">Martini</string>
+    <string name="drink_glass">Cocktail</string>
+    <string-array name="drink_ingredients">
+        <item>2 oz. Gin (Boodles)</item>
+        <item>2 oz. Vodka (Stolichnaya)</item>
+        <item>1/2 oz. Vermouth, dry</item>
+        <item>3 pieces Olive</item>
+    </string-array>
+    <string name="drink_instructions">Add ingredients (except for olives) to a cocktail shaker, shake and strain into a chilled cocktail glass.  Add olives as garnish.</string>
+</resources>

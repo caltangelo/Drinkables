@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.hellolist.HelloListViewActivity&apos; to &apos;HelloListView&apos;&#x0A;- Original project: &apos;HelloListView&apos;&#x0A;- Original element: &apos;com.example.hellolist.HelloListViewActivity&apos;&#x0A;- Renamed element: &apos;com.example.hellolist.HelloListView&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HelloListViewActivity&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.example.hellolist{HelloListViewActivity.java[HelloListViewActivity" matchStrategy="1" name="HelloListView" qualified="false" references="true" similarDeclarations="false" stamp="1315936929023" textual="false" version="1.0"/>
+</session>
