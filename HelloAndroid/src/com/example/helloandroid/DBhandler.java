@@ -19,14 +19,20 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
 import android.os.AsyncTask;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import com.google.gson.Gson;
 
 //AsyncTask<Params, Progress, Result>
 public class DBhandler extends AsyncTask<Object, Void, Void> {
 	
-	String out;
+	String mOut;
+	String mColumn;
+	String mTable;
+	String mWhere;
 	HelloAndroid callerActivity;
-	TextView textv;
+	ListTool mLists;
 	
 	protected void onPreExecute(){
 		super.onPreExecute();
@@ -36,21 +42,25 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 	protected Void doInBackground(Object... params) {
 		// TODO Auto-generated method stub
 		callerActivity = (HelloAndroid) params[0];
-		out = (String) params[1];
-		textv = (TextView) params[2];
-		postData();
+		mColumn = (String) params[1];
+		mTable = (String) params[2];
+		//mWhere = (String) params[3];
+		String q = formatQuery();
+		postData(q);
 		return null;
 	}
 	
 	
-	protected void onPostExecute(Void result) {
+	protected void onPostExecute(Void result) {		
+		mLists = new ListTool(getArray(mOut));
+		ListView lv = callerActivity.getListView();
+		callerActivity.setListAdapter(new ArrayAdapter<String>(callerActivity, R.layout.list_item, ListTool.display));
 		callerActivity.dialog.dismiss();
-		textv.setText(out);
-		callerActivity.setContentView(textv);
+		lv.setTextFilterEnabled(true);
 		super.onPostExecute(result);
 	}
 	
-	public void postData() {
+	public void postData(String query) {
 	    // Create a new HttpClient and Post Header
 	    HttpClient httpclient = new DefaultHttpClient();
 	    HttpPost httppost = new HttpPost("http://www.calebsantangelo.com/query.php");
@@ -58,23 +68,40 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 	    try {
 	        // Add your data
 	        List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-	        nameValuePairs.add(new BasicNameValuePair("col[]", "drink_name"));
-	        nameValuePairs.add(new BasicNameValuePair("table", "drinks"));
+	        nameValuePairs.add(new BasicNameValuePair("Query", query));
+	        //nameValuePairs.add(new BasicNameValuePair("table", "drinks"));
 	        httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
 	        // Execute HTTP Post Request
 	        HttpResponse response = httpclient.execute(httppost);
 	        
-	        out = inputStreamToString(response.getEntity().getContent()).toString();
+	        mOut = inputStreamToString(response.getEntity().getContent()).toString();
 	        
 	    } catch (ClientProtocolException e) {
 	        // TODO Auto-generated catch block
-	    	out = "I've made a huge mistake";
+	    	mOut = "I've made a huge mistake";
 	    } catch (IOException e) {
 	        // TODO Auto-generated catch block
-	    	out = "I've made an equally large mistake";
+	    	mOut = "I've made an equally large mistake";
 	    }
 	} 
+	
+	protected String[] getArray(String jsonString){
+		String[] result;
+		Gson gson = new Gson();
+		result = gson.fromJson(jsonString, String[].class);
+		return result;
+	}
+	
+	protected String formatQuery(){
+		Query query = new Query(mColumn, mTable);
+		if (mWhere != null){
+			query.addClause(mWhere);
+		}
+		Gson gson = new Gson();
+		String jsonQuery = gson.toJson(query);
+		return jsonQuery;
+	}
 	
 	// Fast Implementation
 	private StringBuilder inputStreamToString(InputStream is) {
