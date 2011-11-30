@@ -15,9 +15,13 @@ public class IngredientBrowse extends DBadapter {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
+        column ="ingredient_id as id, ingredient_name as name";
+        table = "ingredients";
+        where = "ingredient_id in (SELECT DISTINCT base_id from drinks)";
+        
         initializeDialog();
 		  DBhandler load = new DBhandler();
-	      load.execute(this,"ingredient_id as id, ingredient_name as name","ingredients","ingredient_id in (SELECT DISTINCT base_id from drinks)");
+	      load.execute(this, column, table, where);
     }
 
 	protected void onListItemClick (ListView l , View v, int position, long id){

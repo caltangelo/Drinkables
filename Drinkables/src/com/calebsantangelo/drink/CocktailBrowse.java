@@ -14,9 +14,13 @@ public class CocktailBrowse extends DBadapter {
 	public void onCreate(Bundle savedInstanceState) {
 		  super.onCreate(savedInstanceState);
 		  
+		  column = "drink_id as id, drink_name as name";
+		  table = "drinks";
+
+		  
 		  initializeDialog();
 		  DBhandler load = new DBhandler();
-	      load.execute(this,"drink_id as id, drink_name as name","drinks",null);
+	      load.execute(this, column, table,null);
 		}
 
 	@Override

@@ -13,16 +13,16 @@ public class ListTool {
 		displayList = new ArrayList<String>();
 		idList = new ArrayList<Integer>();
 		for (String s : fromDB){
-			String id = s.split("##")[0];
-			String name = s.split("##")[1];
+			String name = s.split("##")[0];
+			String id = s.split("##")[1];
 			displayList.add(name);
 			idList.add(Integer.parseInt(id));
 		}
 	}
 	
 	void convertToArray(){
-		display = new String[10];
-		IDs = new Integer[10];
+		display = new String[1];
+		IDs = new Integer[1];
 		display = displayList.toArray(display);
 		IDs = idList.toArray(IDs);	
 	}

@@ -22,7 +22,7 @@ import android.os.AsyncTask;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.tabwidget.R;
+import com.calebsantangelo.drink.R;
 import com.google.gson.Gson;
 
 //AsyncTask<Params, Progress, Result>
@@ -34,6 +34,7 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 	String mWhere;
 	DBadapter callerActivity;
 	ListTool mLists;
+	String mCabinet;
 	
 	protected void onPreExecute(){
 		super.onPreExecute();
@@ -72,7 +73,7 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 	        // Add your data
 	        List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 	        nameValuePairs.add(new BasicNameValuePair("Query", query));
-	        nameValuePairs.add(new BasicNameValuePair("table", "foo"));
+	        nameValuePairs.add(new BasicNameValuePair("cab", mCabinet));
 	        httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
 	        // Execute HTTP Post Request

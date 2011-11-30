@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.tabwidget.R;
 import com.google.gson.Gson;
 
 public class CocktailView extends Activity {
@@ -23,7 +22,7 @@ public class CocktailView extends Activity {
 		mNameText = (TextView) findViewById(R.id.drinkname);
 		mInstructionsText = (TextView) findViewById(R.id.instructions);
 		mGlassText = (TextView) findViewById(R.id.glass_type);
-		mIngreds = (TextView) findViewById(R.id.ingreds);
+		mIngreds = (TextView) findViewById(R.id.ingredients);
 		
 		Bundle extras = getIntent().getExtras();
 		if (extras != null){
@@ -32,16 +31,16 @@ public class CocktailView extends Activity {
 		}
 		
 		mDBhandler = new fetchCocktail();
-		mDBhandler.execute(this,"drink_name, instructions, glass, drink_ingredients","drinks"," drink_id = "+mDrink_id);
+		mDBhandler.execute(this,"drink_name as name, instructions, glass, drink_ingredients","drinks"," drink_id = "+mDrink_id);
 	}
 	
 	private class fetchCocktail extends DBhandler{
 		
-		CocktailView callerActivity;
+		//CocktailView callerActivity;
 		
 		@Override
 		protected Void doInBackground(Object... params){
-			callerActivity = (CocktailView) params[0];
+			//callerActivity = (CocktailView) params[0];
 			mColumn = (String) params[1];
 			mTable = (String) params[2];
 			mWhere = (String) params[3];
@@ -69,20 +68,20 @@ public class CocktailView extends Activity {
 	
 	private class Cocktail{
 		
-		String drink_name;
+		String name;
 		String instructions;
 		String glass;
 		String drink_ingredients;
 		
 		private Cocktail (String name, String instructions, String glass, String ingredients){
-			drink_name = name;
+			this.name = name;
 			this.instructions = instructions;
 			this.glass = glass;
 			drink_ingredients = ingredients;
 		}
 		
 		private String getName(){
-			return drink_name;
+			return name;
 		}
 		
 		private String getInstructions(){

@@ -1,6 +1,6 @@
 package com.calebsantangelo.drink;
 
-import com.example.tabwidget.R;
+
 
 import android.app.TabActivity;
 import android.content.Intent;
@@ -40,7 +40,7 @@ public class HelloTabWidget extends TabActivity {
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
-	    tabHost.setCurrentTab(0);
+	    tabHost.setCurrentTab(2);
 	}
 
 }
