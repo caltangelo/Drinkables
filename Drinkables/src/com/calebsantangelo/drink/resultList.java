@@ -1,13 +1,12 @@
 package com.calebsantangelo.drink;
 
 
-import java.util.ArrayList;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class resultList extends DBadapter {
 
@@ -19,6 +18,7 @@ public class resultList extends DBadapter {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		  super.onCreate(savedInstanceState);
+		  setContentView(R.layout.list_display);
 		  
 		  Bundle extras = getIntent().getExtras();
 			if (extras != null){
@@ -61,10 +61,12 @@ public class resultList extends DBadapter {
 			mLists = new ListTool(getArray(mOut));
 			mLists.convertToArray();
 			ListView lv = getListView();
+			
 			setListAdapter(new ArrayAdapter<String>(callingActivity, R.layout.list_item, mLists.display));
+			lv.setEmptyView(findViewById(R.layout.no_results));
 			setIndices(mLists.IDs);
 			dismissDialog();
-			lv.setTextFilterEnabled(true);
+			lv.setTextFilterEnabled(false);
 		}
 		
 		

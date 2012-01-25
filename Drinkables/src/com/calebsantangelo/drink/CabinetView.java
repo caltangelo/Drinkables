@@ -72,7 +72,7 @@ public class CabinetView extends DBadapter {
 			startActivity(i);
 			return true;
 		case R.id.help:
-			Toast.makeText(getApplicationContext(), "sux 2bU, n00b", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), R.string.help_text, Toast.LENGTH_LONG).show();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

@@ -5,6 +5,9 @@
 	<string name="IngredientBrowse">Browse Cocktails By Main Ingredient</string>
 	<string name="CocktailBrowse">Browse Cocktails By Name</string>
 	<string name="CabinetView">Search For Cocktails By Selected Ingredients</string>
-	<string name="menu_send">Search For Cocktails Containing Selected Ingredients</string>
-	<string name="help">i dunno how2 use program</string>
+	<string name="menu_send">Search</string>
+	<string name="help">Need Help?</string>
+	<string name="help_text">FROM LEFT TAB: Browse by main ingredient\n FROM CENTER TAB: Browse all cocktails\n
+	FROM RIGHT TAB: Select any number of ingredients, then hit menu > submit to search!</string>
+	<string name="empty">Sorry, your search yielded no results, please try again with different ingredients</string>
 </resources>
