@@ -58,12 +58,16 @@ public class resultList extends DBadapter {
 		
 		@Override
 		protected void onPostExecute(Void result) {
+			if("[]".equals(mOut)){
+				dismissDialog();
+				return;
+			}
 			mLists = new ListTool(getArray(mOut));
 			mLists.convertToArray();
 			ListView lv = getListView();
 			
 			setListAdapter(new ArrayAdapter<String>(callingActivity, R.layout.list_item, mLists.display));
-			lv.setEmptyView(findViewById(R.layout.no_results));
+			//lv.setEmptyView(findViewById(R.layout.no_results));
 			setIndices(mLists.IDs);
 			dismissDialog();
 			lv.setTextFilterEnabled(false);

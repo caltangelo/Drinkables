@@ -1,5 +1,5 @@
 <?php
-require "oldlink.php";
+require "link.php";
 
 $cabinet = $_POST['cab'];
 $json_query = $_POST['Query'];
@@ -40,7 +40,7 @@ function sendResults($results){
 	$count = 0;
 	while ($row = @ mysql_fetch_array($results, MYSQL_ASSOC))
 	{
-	$json[$count]=$row["name"]."##".$row["id"];
+	$json[$count]="{$row["name"]}##{$row["id"]}";
 	$count++;
 	}
 	return $json;
@@ -55,6 +55,12 @@ function deciderFunction($results){
 	return $table;
 	}
 }
+
+function assertUnicode(){
+	mysql_query('SET CHARACTER SET utf8');
+}
+
+assertUnicode();
 
 $query = extractQueryFromJSON($json_query);
 

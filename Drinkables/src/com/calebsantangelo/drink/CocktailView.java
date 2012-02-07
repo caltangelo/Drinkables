@@ -93,7 +93,12 @@ public class CocktailView extends Activity {
 		}
 		
 		private String getIngredients(){
-			return drink_ingredients;
+			return formatIngredients(drink_ingredients);
+		}
+		
+		private String formatIngredients(String ingredients){
+			String temp = ingredients.replace("#", " ");
+			return temp.replace(":", "\n");
 		}
 	}
 
