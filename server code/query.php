@@ -1,4 +1,5 @@
 <?php
+//Facilitates all client/database communication
 require "link.php";
 
 $cabinet = $_POST['cab'];
@@ -19,11 +20,10 @@ function updateCabinet($values,$con){
  		$con))) die("Couldn't delete right");
  	
  	if (!($result = @ mysql_query("INSERT INTO cabinet VALUES {$values}",
- 		$con))) die("Couldn't insert right");/*die(mysql_error($link))*/
+ 		$con))) die("Couldn't insert right");
 }
 
 function runCabQuery($con,$cab){
-	//$toAdd = cabListToString($cab);
 	updateCabinet($cab,$con);
 	
 	$innerclause = "SELECT drink_id FROM recipes r LEFT OUTER JOIN cabinet c on 

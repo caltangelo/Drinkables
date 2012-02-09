@@ -1,11 +1,21 @@
 <?php
+/*
+Adds any new ingredients not already in database, then adds the recipe 
+to both the recipes and drinks tables. If it was an existing recipe 
+(it has a drink_id from the database) the process is the same: new ingredients
+are added, all entries in the recipes table are deleted and replaced. The
+only difference is the last step, which is a MySQL UPDATE instead of 
+INSERT. Displays confirmation message in addition to giving relevant error
+messages for malformed input.
+*/
 require "link.php";
 
-$name=cleanAndQuote($_POST['drink_name']);
-$ingredients=$_POST['ingredients'];
-$instructions=cleanAndQuote($_POST['instruct']);
-$glass=cleanAndQuote($_POST['glass']);
-$id=$_POST['id'];
+
+$name=cleanAndQuote(strip_tags($_POST['drink_name']));
+$ingredients=strip_tags($_POST['ingredients']);
+$instructions=cleanAndQuote(strip_tags($_POST['instruct']));
+$glass=cleanAndQuote(strip_tags($_POST['glass']));
+$id=strip_tags($_POST['id']);
 
 function cleanAndQuote($str){
 	return "'".mysql_real_escape_string($str)."'";
@@ -23,9 +33,9 @@ function sqlInsert($columns,$values,$table,$con){
  		 return $result;
 }
 
-function sqlUpdate($name,$ingreds,$glass,$instruct,$id,$con){
+function sqlUpdate($name,$ingreds,$glass,$instruct,$id,$base,$con){
 	if (!($result = @ mysql_query("UPDATE drinks SET drink_name={$name}, glass={$glass},
-	drink_ingredients={$ingreds}, instructions={$instruct} WHERE drink_id={$id}",
+	drink_ingredients={$ingreds}, instructions={$instruct}, base_id={$base} WHERE drink_id={$id}",
  		$con))) die("update error: ".mysql_errno($con).mysql_error($con));		
  	return $result;
 }
@@ -132,16 +142,16 @@ function newRecipe($name,$instructions,$glass,$ingredients,$con){
 	$ingredIDs = addIngredients($con,$ingredients);
 	$id = addToDrinks($name,$instructions,$glass,cleanAndQuote($ingredients),$ingredIDs[0],$con);
 	addToRecipes($id,$ingredIDs,$con);
-	success();
+	success($id);
 }
 
 function updateRecipe($name,$instructions,$glass,$ingredients,$id,$con){
 	$ingredIDs = addIngredients($con,$ingredients);
-	sqlUpdate($name,cleanAndQuote($ingredients),$glass,$instructions,$id,$con);
+	sqlUpdate($name,cleanAndQuote($ingredients),$glass,$instructions,$id,$ingredIDs[0],$con);
 	//delete from recipes, then add
 	recipesClear($id,$con);
 	addToRecipes($id,$ingredIDs,$con);
-	success();
+	success($id);
 }
 
 function main($name,$instructions,$glass,$ingredients,$link,$id){
@@ -152,12 +162,9 @@ function main($name,$instructions,$glass,$ingredients,$link,$id){
 	}
 }
 
-function success(){
-	echo "<h1>Success!</h1>";
+function success($id){
+	echo "<h1>drink #{$id} successfully added</h1>";
 }
 
 main($name,$instructions,$glass,$ingredients,$link,$id);
-//$t = cleanAndQuote($ingredients);
-//$t = addIngredients($link,"30ml (6 parts)#gin:15ml (3 parts)#Cognac:10ml (2 parts)#vermouth, dry:15ml (3 parts)#Orange juice");
-//print_r($t);
 ?>

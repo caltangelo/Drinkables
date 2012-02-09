@@ -7,6 +7,9 @@
 <select name="drink">
 <option value="0">Add new recipe</option>
 <?php
+/* 
+User selects to edit existing recipe or add their own via save.php script
+*/
 require "link.php";
 
 if (!($result = @ mysql_query("SELECT drink_name as dname, drink_id as id FROM drinks ORDER BY dname",
