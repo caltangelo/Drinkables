@@ -6,14 +6,17 @@
 <body>
 <form action="save.php" method="post">
 <?php
+/*
+Prints a form. If a drink was selected from form.php, the recipe is filled in
+for the user to edit. Otherwise a new drink is created in the database.
+Ingredients are separated by colons(:) and each ingredient is seperated
+its units with a hash mark (#). The first ingredient is listed as the
+cocktail's base so order accordingly.
+*/
 require "link.php";
 $id = $_GET['drink'];
 print "<input type='hidden' name='id' value={$id} />";
-/* Functions I need:
-* one to make text field filled with name
-* another for instructions
-* one for ingredients? idea: generate names from query then select ones from recipe?
-*/
+
 function getRecipe($id, $link){
 	if (!($result = @ mysql_query("SELECT drink_name, drink_ingredients, instructions, glass FROM drinks WHERE drink_id = {$id}",
  		$link))) die("Error Querying Database");
