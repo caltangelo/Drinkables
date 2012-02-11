@@ -35,6 +35,8 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 	DBadapter callerActivity;
 	ListTool mLists;
 	String mCabinet;
+	//This must be set to the URL of the query.php script on the web server
+	String URL = "http://www.calebsantangelo.com/query.php";
 	
 	protected void onPreExecute(){
 		super.onPreExecute();
@@ -67,7 +69,7 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 	public void postData(String query) {
 	    // Create a new HttpClient and Post Header
 	    HttpClient httpclient = new DefaultHttpClient();
-	    HttpPost httppost = new HttpPost("http://www.calebsantangelo.com/query.php");
+	    HttpPost httppost = new HttpPost(URL);
 
 	    try {
 	        // Add your data
@@ -83,10 +85,10 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 	        
 	    } catch (ClientProtocolException e) {
 	        // TODO Auto-generated catch block
-	    	mOut = "I've made a huge mistake";
+	    	mOut = e.getMessage();
 	    } catch (IOException e) {
 	        // TODO Auto-generated catch block
-	    	mOut = "I've made an equally large mistake";
+	    	mOut = e.getMessage();
 	    }
 	} 
 	
@@ -107,7 +109,6 @@ public class DBhandler extends AsyncTask<Object, Void, Void> {
 		return jsonQuery;
 	}
 	
-	// Fast Implementation
 	private StringBuilder inputStreamToString(InputStream is) {
 	    String line = "";
 	    StringBuilder total = new StringBuilder();

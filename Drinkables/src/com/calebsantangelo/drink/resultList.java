@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class resultList extends DBadapter {
 
@@ -67,7 +66,6 @@ public class resultList extends DBadapter {
 			ListView lv = getListView();
 			
 			setListAdapter(new ArrayAdapter<String>(callingActivity, R.layout.list_item, mLists.display));
-			//lv.setEmptyView(findViewById(R.layout.no_results));
 			setIndices(mLists.IDs);
 			dismissDialog();
 			lv.setTextFilterEnabled(false);

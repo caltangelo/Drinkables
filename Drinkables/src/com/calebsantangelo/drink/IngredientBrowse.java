@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 
 public class IngredientBrowse extends DBadapter {
-
 	
     /** Called when the activity is first created. */
     @Override
